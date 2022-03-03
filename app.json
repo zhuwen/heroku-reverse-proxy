@@ -8,7 +8,7 @@
 	"repository": "https://github.com/zhuwen/heroku-reverse-proxy",
 	"buildpacks": [
 		{
-			"url": "https://github.com/heroku/heroku-buildpack-nginx"
+			"url": "https://github.com/zhuwen/heroku-buildpack-nginx"
 		}
 	],
 	"env": {

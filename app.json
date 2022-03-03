@@ -12,9 +12,9 @@
 		}
 	],
 	"env": {
-		"UPSTREAM_SERVER": {
-			"description": "URL of upstream server to which all requests should be proxied"
+		"PORT": {
+			"description": "listen port"
 		}
 	},
-	"stack": "heroku-16"
+	"stack": "heroku-20"
 }

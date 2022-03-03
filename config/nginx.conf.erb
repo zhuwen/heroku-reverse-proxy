@@ -32,7 +32,7 @@ http {
 	#HTTP proxy       #这里位http的正向代理配置
 	server{
 		resolver 8.8.8.8;
-		listen 80;
+		listen 8080;
 		location / {
 			root html;
 			index index.html index.htm;
@@ -54,7 +54,7 @@ http {
 	#HTTPS proxy        #这里为：https的正向代理配置      
 	server{
 		resolver 8.8.8.8;
-		listen 443;
+		listen 4443;
 		location / {
 			root html;
 			index index.html index.htm;

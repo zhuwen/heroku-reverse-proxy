@@ -2,7 +2,8 @@
 
 Run a reverse proxy using nginx on Heroku.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/zhuwen/heroku-reverse-proxy
+.git)
 
 ## Installation
 

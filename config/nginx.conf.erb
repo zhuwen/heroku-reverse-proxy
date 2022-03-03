@@ -32,7 +32,7 @@ http {
 	#HTTP proxy       #这里位http的正向代理配置
 	server{
 		resolver 8.8.8.8;
-		listen 8080;
+		listen <%= ENV['PORT'] %>;
 		location / {
 			root html;
 			index index.html index.htm;
@@ -51,24 +51,5 @@ http {
         	}
         }
 
-	#HTTPS proxy        #这里为：https的正向代理配置      
-	server{
-		resolver 8.8.8.8;
-		listen 4443;
-		location / {
-			root html;
-			index index.html index.htm;
-			proxy_pass https://$host$request_uri;
-			proxy_buffers 256 4k;
-			proxy_max_temp_file_size 0k;
-			proxy_connect_timeout 30;
-			proxy_send_timeout 60;
-			proxy_read_timeout 60;
-			proxy_next_upstream error timeout invalid_header http_502;
-		}
-		error_page 500 502 503 504 /50x.html;
-		location = /50x.html {
-			root html;
-		}
-    	}
+	
 }
